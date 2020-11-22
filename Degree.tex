@@ -1,0 +1,62 @@
+\documentclass[12pt,a4paper,openany]{book}
+\usepackage[utf8]{inputenc}
+\usepackage[spanish]{babel}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{makeidx}
+\usepackage{graphicx}
+\usepackage{lipsum}
+\usepackage{varioref}
+\usepackage[left=3.00cm, right=3.00cm, top=3.00cm, bottom=3.00cm]{geometry}
+\usepackage[nodayofweek,level]{datetime}
+\usepackage[colorlinks=true, linkcolor=black]{hyperref}
+\graphicspath{{./figures/}}
+
+\author{Yomar Huaman\'{i} Fern\'{a}ndez}
+\title{Degree}
+\begin{document}
+		
+%----------------------------------------------------------------------------------------------------------		
+	\frontmatter
+%	Carátula		
+		\include{degree-info}
+
+%	 Dedicatoria
+		\include{Acknowledgement/acknowledgement}
+		
+%	Resumen
+		\include{Abstract/abstract}
+		
+%	Introducción
+		\include{Introduction/introduction}
+		
+%	Índice
+		\tableofcontents
+		\listoffigures
+		\listoftables
+		
+		
+%----------------------------------------------------------------------------------------------------------		
+	\mainmatter
+	
+%	Capítulo I
+		\include{ChapterI/chapterI}
+		
+%	Capítulo II
+		\include{ChapterII/chapterII} 
+		
+%	Capítulo III
+		\include{ChapterIII/chapterIII}
+		
+%	Capítulo IV	
+		\include{ChapterIV/chapterIV} \cite{jhonson-2}
+
+%----------------------------------------------------------------------------------------------------------	
+	
+	\backmatter
+	
+	\bibliographystyle{apalike}
+	\bibliography{References/references}
+
+\end{document}
