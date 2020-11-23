@@ -27,8 +27,9 @@
 	\begin{center}%
 		\bfseries \abstractname
 		\@endparpenalty\@M
-\end{center}}%
-{\par\vfil\null\endtitlepage}
+	\end{center}}%
+	{\par\vfil\null
+	\endtitlepage}
 \else
 \newenvironment{abstract}{%
 	\if@twocolumn
@@ -54,6 +55,7 @@
 		\include{Acknowledgment/acknowledgement}
 %	Resumen
 		\begin{abstract}
+			\title{Resumen}
 			\lipsum
 		\end{abstract}
 		
