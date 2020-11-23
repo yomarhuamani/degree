@@ -19,30 +19,18 @@
 
 %\newcommand\abstractname{Abstract}  %%% here
 \makeatletter
-\if@titlepage
 \newenvironment{abstract}{%
 	\titlepage
 	\null\vfil
 	\@beginparpenalty\@lowpenalty
 	\begin{center}%
+		\begin{spacing}{1.5}
 		\bfseries \abstractname
 		\@endparpenalty\@M
+		\begin{spacing}
 	\end{center}}%
 	{\par\vfil\null
 	\endtitlepage}
-\else
-\newenvironment{abstract}{%
-	\if@twocolumn
-	\section*{\abstractname}%
-	\else
-	\small
-	\begin{center}%
-		{\bfseries \abstractname\vspace{-2.5em}\vspace{\z@}}%
-	\end{center}%
-	\quotation
-	\fi}
-{\if@twocolumn\else\endquotation\fi}
-\fi
 \makeatother
 
 \begin{document}
