@@ -780,7 +780,9 @@
 				El objetivo principal de este JSR es mostrar la compatibilidad con el próximo estándar IETF HTTP / 2 a los usuarios de la API de Servlet. Un objetivo secundario es actualizar la API de Servlet para lograr el cumplimiento de las nuevas funciones en HTTP 1.1, así como responder a las opiniones de la comunidad.
 				HTTP / 2 todavía está en desarrollo activo en un grupo de trabajo (WG) de IETF, sin embargo, se espera que se complete mucho antes de la fecha de finalización de Java EE 8. Si bien en general es una mala idea rastrear un objetivo en movimiento como como una especificación IETF desarrollada activamente, varios factores mitigan el riesgo en este caso \cite{chap2_jsr_369}.
 		\subsubsection{JSR-370}
-		\lipsum[1-2]
+			Los eventos enviados por el servidor (SSE) es una nueva tecnología definida como parte del conjunto de recomendaciones HTML5 para que un cliente (por ejemplo, un navegador) obtenga actualizaciones automáticamente de un servidor a través de HTTP. Se emplea comúnmente para transmisiones de datos de flujo unidireccional en las que un servidor actualiza a un cliente periódicamente o cada vez que ocurre un evento.
+			
+			JAX-RS 2.0 introdujo la noción de procesamiento asincrónico tanto para el cliente como para las API del servidor. Sin embargo, el procesamiento asincrónico por sí solo no puede cumplir todas las promesas de una arquitectura moderna sin la ayuda de I/O sin bloqueo. Si solo está disponible el bloqueo de I/O, el procesamiento asincrónico simplemente empuja el problema de un hilo al siguiente; esto es similar a pedir prestado a una persona para pagar a otra, el problema no se resuelve realmente, solo se aplaza. Por lo tanto, es necesario admitir I/O sin bloqueo para lograr un alto rendimiento y administrar de manera eficiente recursos como subprocesos.
 		\subsubsection{JSR-371}
 		\lipsum[1-2]
 	\subsection{\textit{Spring Framework}}
