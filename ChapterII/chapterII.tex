@@ -634,7 +634,26 @@
 	\subsection{Diseño}
 				\lipsum[1]
 	\subsection{Pruebas}
-				\lipsum[1]
+				Los defectos destruyen la confianza necesaria para un desarrollo de software eficaz. Los clientes deben poder confiar en el software. Los gerentes deben poder confiar en los informes de progreso. Los programadores deben poder confiar entre ellos. Los defectos destruyen esta confianza. Sin confianza, las personas pasan gran parte de su tiempo defendiéndose de la posibilidad de que otra persona haya cometido un error.
+				
+				Aquí está el dilema en el desarrollo de software: los defectos son costosos, pero eliminarlos también es costoso. Sin embargo, la mayoría de los defectos terminan costando más de lo que hubiera costado prevenirlos. Los defectos son costosos cuando ocurren, tanto los costos directos de arreglar los defectos como los costos indirectos debido a relaciones dañadas, negocios perdidos y tiempo de desarrollo perdido. Las prácticas de XP tienen como objetivo comunicarse claramente para que no surjan defectos en primer lugar y, cuando lo hagan, asegurarse de que el equipo las utilice para aprender a evitar problemas similares en el futuro.
+				
+				Siempre habrá defectos. Surgirán circunstancias inesperadas. En situaciones novedosas e imprevistas, es probable que el software haga algo que el autor no habría tenido la intención de haber sabido de antemano la situación.
+				
+				Los niveles aceptables de defectos varían. Uno de los objetivos del desarrollo es reducir la aparición de defectos a un nivel económicamente sostenible. Este nivel es diferente para diferentes tipos de software.
+				
+				Otro objetivo del desarrollo es reducir la aparición de defectos a un nivel en el que la confianza pueda crecer razonablemente en el equipo. La inversión en la reducción de defectos tiene sentido como inversión en el trabajo en equipo. Los errores introducidos por un programador dificultan que todos los demás hagan su trabajo. Cada error de un miembro del equipo que afecta a otro le cuesta tiempo, energía y confianza al equipo. El buen trabajo y el buen trabajo en equipo fortalecen la moral y la confianza. Si puede respetar y confiar en sus colegas, podrá ser más productivo y disfrutar más de su trabajo. Ocultar errores para protegerse, aunque a veces parece necesario, es una enorme pérdida de tiempo y energía. La confianza da energía a los participantes. Nos sentimos bien cuando las cosas funcionan bien. Necesitamos estar seguros para experimentar y cometer errores. Necesitamos pruebas para responsabilizarnos de nuestra experimentación, de modo que podamos estar seguros de que no estamos haciendo daño.
+				
+				El aumento del costo de los defectos (DCI) es el segundo principio que se aplica en XP para aumentar la rentabilidad de las pruebas. DCI es una de las pocas verdades verificadas empíricamente sobre el desarrollo de software: cuanto antes encuentre un defecto, más barato será repararlo. Si encuentra un defecto después de una década de implementación, tendrá que reconstruir una gran cantidad de historia y contexto para averiguar qué se suponía que debía hacer el código en primer lugar, cuáles de esas suposiciones son erróneas y qué debería corregirse. por lo que el resto del programa (presumiblemente correcto) permanece inalterado. Detecte el mismo defecto en el momento en que se crea y el costo de reparación será mínimo.
+				
+				DCI implica que los estilos de desarrollo de software con ciclos de retroalimentación largos (Figura \ref{figure:chaperII_7}) serán costosos y tendrán muchos defectos residuales. El presupuesto para encontrar y reparar defectos es limitado. Cuanto mayor sea el costo de búsqueda y reparación de defectos, más defectos permanecerán en el código implementado.
+				
+				\begin{figure}[H]
+					\centering
+					\includegraphics[width=0.5 \textwidth]{xp_6}
+					\caption {\centering \small{Las pruebas tardías y costosas dejan muchos defectos}} \label{figure:chaperII_7}
+					\small {Fuente: ``Extreme Programming Explained: Embrace Change, 2nd Ed." por Beck, Kent and Andres - Cynthia, 2004, Copyright by Addison-Wesley Professional.}
+				\end{figure}
 %------------------------------------------------------------------------------------------------------------------
 %-------------------------------Tecnologias backend para la integracion--------------------------------------------
 %------------------------------------------------------------------------------------------------------------------
