@@ -805,7 +805,7 @@
 	\subsection{Mondrian}
 			Mondrian es un motor de análisis. Acepta consultas analíticas y las convierte en consultas relacionales, devolviendo los datos en una forma compatible con la analítica. Pero para que Mondrian sea útil para los usuarios comerciales, necesita algún tipo de interfaz y aplicación para ejecutarlo.
 			Varios productos utilizan Mondrian como motor de análisis para informes y análisis, como se muestra en la tabla  Uno de esos productos es Pentaho, un popular servidor de análisis de negocios de código abierto que incluye Mondrian y tiene una variedad de complementos para permitir a los usuarios usar directamente las capacidades de Mondrian. Pentaho es el distribuidor de código abierto de Mondrian más grande del mundo y lo utilizan miles de organizaciones. Pentaho también es uno de los principales patrocinadores y contribuyentes de Mondrian, lo que significa que Mondrian continuará trabajando con Pentaho en el futuro previsible, y las nuevas funciones de Mondrian se integrarán rápidamente en Pentaho.
-			\begin{table}[bth]
+			\begin{table}[H]
 				\small
 				\begin{tabular}{ |p{4cm}|p{11cm|}| }
 					\hline
@@ -820,6 +820,17 @@
 			\small {Fuente: ``Mondrian in Action" por D., William Back and Goodman, Nicholas and Hyde, Julian, 2013, Copyright by Manning Publications Co.}
 			\label{table:1}
 			\end{table}
+		
+		La figura 2.1 muestra cómo Mondrian encaja en la arquitectura de Pentaho. Esta vista está muy simplificada, pero contiene las partes principales de un sistema que usa Mondrian.
+		Los usuarios interactúan utilizando herramientas basadas en la web.
+		Mondrian acepta consultas de estas herramientas y luego usa coincidencias de esquema lógico para generar consultas SQL.
+		Luego, Mondrian devuelve los resultados a los clientes para formatearlos y mostrarlos a los usuarios.
+		\begin{figure}[H]
+			\centering
+			\includegraphics[width=0.7 \textwidth]{xp_8}
+			\caption {\centering \small{El ciclo de Stress}} \label{figure:chaperII_9}
+			\small {Fuente: ``Extreme Programming Explained: Embrace Change, 2nd Ed." por Beck, Kent and Andres - Cynthia, 2004, Copyright by Addison-Wesley Professional.}
+		\end{figure}
 	\subsection{Git}
 			\lipsum[1-2]
 	\subsection{Enunciate}
