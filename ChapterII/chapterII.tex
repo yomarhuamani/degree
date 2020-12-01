@@ -833,8 +833,7 @@
 			\small {Fuente: ``Mondrian in Action" por D., William Back and Goodman, Nicholas and Hyde, Julian, 2013, Copyright by Manning Publications Co.}
 		\end{figure}
 		\subsubsection{\textit{Mondrian }y \textit{MDX}}
-			El lenguaje de consulta de \textit{Mondrian}, \textit{MDX}, proporciona una variedad de análisis avanzados basados ​​en el tiempo que puede aprovechar inmediatamente sobre sus cubos existentes. \textit{MDX} admite (y facilita bastante) cosas como acumulaciones del “año hasta la fecha”, este trimestre frente al mismo trimestre del año pasado, aumento porcentual de este trimestre con respecto al trimestre anterior, y así sucesivamente. 			
-			MDX significa Expresiones multidimensionales; Microsoft lo hizo popular como parte de sus servicios de análisis de SQL Server. Hasta el año 2000, no existía una forma coherente e independiente del proveedor de consultar cubos OLAP. A diferencia de las bases de datos relacionales que tenían un dialecto SQL similar entre los proveedores, los sistemas OLAP tenían API individuales y dispares. Aproximadamente al mismo tiempo, el dominio y liderazgo de mercado de Microsoft en el espacio del servidor OLAP convirtió a MDX en un estándar de facto, ya que la mayoría del mercado (ya SQL Server) ya conocía MDX. Hecho oficial, como parte de un estándar de múltiples proveedores (XML para análisis), MDX se ha convertido en el único lenguaje de consulta bien implementado para sistemas OLAP. Mondrian, como muchos otros sistemas OLAP, lo eligió por su compatibilidad y elocuencia \cite{chap2_mondrian_action}.
+			 oficial, como parte de un estándar de múltiples proveedores (XML para análisis), MDX se ha convertido en el único lenguaje de consulta bien implementado para sistemas OLAP. Mondrian, como muchos otros sistemas OLAP, lo eligió por su compatibilidad y elocuencia \cite{chap2_mondrian_action}.
 			
 	\subsection{\textit{Online Analytical Processing (OLAP)}}
 		El procesamiento analítico en línea (OLAP) significa analizar grandes cantidades de datos en tiempo real. A diferencia del procesamiento de transacciones en línea (OLTP), donde las operaciones típicas leen y modifican registros individuales y pequeños, OLAP maneja datos de forma masiva y las operaciones generalmente son de solo lectura. El término ``en línea'' implica que, aunque se trate de grandes cantidades de datos (por lo general, muchos millones de registros que ocupan varios gigabytes), el sistema debe responder a las consultas lo suficientemente rápido como para permitir una exploración interactiva de los datos. Como veremos, eso presenta considerables desafíos técnicos.
@@ -845,12 +844,12 @@
 			\begin{tabular}{lllllll}
 				\textit{Year}              & \multicolumn{2}{l}{\textbf{2000}}           & \multicolumn{2}{l}{\textbf{2001}}           & \multicolumn{2}{l}{\textbf{Growth}}         \\
 				\textit{Product}           & \textbf{Dollar sales} & \textbf{Unit sales} & \textbf{Dollar sales} & \textbf{Unit sales} & \textbf{Dollar sales} & \textbf{Unit sales} \\
-				\textbf{Total}             & $7,073                & 2,693               & $7,636                & 3,008               & 8%                    & 12%                 \\
-				\textbf{— Books}           & $2,753                & 824                 & $3,331                & 966                 & 21%                   & 17%                 \\
-				\textbf{—— Fiction}        & $1,341                & 424                 & $1,202                & 380                 & -10%                  & -10%                \\
-				\textbf{—— Non-fiction}    & $1,412                & 400                 & $2,129                & 586                 & 51%                   & 47%                 \\
-				\textbf{— Magazines}       & $2,753                & 824                 & $2,426                & 766                 & -12%                  & -7%                 \\
-				\textbf{— Greetings cards} & $1,567                & 1,045               & $1,879                & 1,276               & 20%                   & 22%                
+				\textbf{Total}             & \$7,073                & 2,693               & \$7,636                & 3,008               & 8\%                    & 12\%                 \\
+				\textbf{— Books}           & \$2,753                & 824                 & \$3,331                & 966                 & 21\%                   & 17\%                 \\
+				\textbf{—— Fiction}        & \$1,341                & 424                 & \$1,202                & 380                 & -10\%                  & -10\%                \\
+				\textbf{—— Non-fiction}    & \$1,412                & 400                 & \$2,129                & 586                 & 51\%                   & 47\%                 \\
+				\textbf{— Magazines}       & \$2,753                & 824                 & \$2,426                & 766                 & -12\%                  & -7\%                 \\
+				\textbf{— Greetings cards} & \$1,567                & 1,045               & \$1,879                & 1,276               & 20\%                   & 22\%                
 			\end{tabular}
 		\end{table}
 	
