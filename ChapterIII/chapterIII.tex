@@ -111,9 +111,12 @@
 			
 		\subsubsection{Compatibilidad: Verificar y corregir librerias de conflicto para las especificaciones del servidor Jbos EAP 6.4+ y loss archivos jboss-deployment-structure.xml, application.xml y build.properties.}
 		
+		En la verificaci\'{o}n de los clientes se encontraron conflictos con las version Jbos EAP 6.4, 7.0 y sus versiones comunitarias Wildfly 10.0 Final, 10.1 y 11.0.
 		
-		Se hizo el despliegue independiente del proyecto saiku
-		En la verificaci\'{o}n de los clientes se encontraron conflictos en las librerias 
+		Los conflictos son por configuraciones internas de librerias como jasper reports 3.0, implementaciones del standard JPA 1.0, librerias de JAX-WS.
+		
+		El equipo recomienda mantenerse en la JRS-366(Jdk 8) y eso debe comunicarse al equipo de ventas para no modificar esta especificaci\'{o}n.
+		
 		
 		\subsubsection{Verificar y corregir las librerias de conflicto para las especificaciones del servidor WebLogic 12c + y los archivos weblogic.xml y build.properties}
 		\subsubsection{Verificar y corregir librerias de conflicto para las especificaciones del servidor WebSphere 8.0+ y los archivos ibm-web-bnd.xml, ibm-web-ext.xml, deployment.xml y build.properties}
