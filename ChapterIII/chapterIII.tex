@@ -71,20 +71,27 @@
 		Analizemos el sprint review de cada historia:
 		\subsubsection{Integrar los componentes saiku-ui, saiku-core y saiku-webapp, saiku-service, saiku-query, saiku-repository en el proceso de construcción del artefacto de GiroSuite.}
 		
-		El proyecto Saiku Analytics a nivel de fuentes correctas y compilables ya est\'{a}n descontinuadas, y se tienen sub m\'{o}dulos que no son \'{u}tiles al 100\% Figura \ref{figure:chaperIII_4}.
-		
-		\begin{figure}[H]
-			\centering
-			\includegraphics[width=1 \textwidth]{saiku_1}
-			\caption {\centering \small{Proyecto Saiku Analytics, c\'{o}digo fuente descontinuado}} \label{figure:chaperIII_4}
-			\small {Fuente: \'{A}rea de desarrollo de Tesla Technologies S.A.C, 2018}
-		\end{figure}
-		
-		El nuevo m\'{o}dulo resultante rubik-report tiene compatibilidad al 100\% con el producto GiroSuite.
-		
-		El nuevo m\'{o}dulo rubik-report si contiene las funcionalidades m'{i}nimas del proyecto Saiku Analytics.
-		
-		El equipo recomienda reducir el n\'{u}mero de m\'{o}dulos pues 2 de ellos se encuentran ligados directamente como plugins de la Suite Pentaho Analytics.
+		\begin{itemize}
+			\item El proyecto Saiku Analytics a nivel de fuentes correctas y compilables ya est\'{a}n descontinuadas, y se tienen sub m\'{o}dulos que no son \'{u}tiles al 100\% Figura \ref{figure:chaperIII_4}.
+			
+			\begin{figure}[H]
+				\centering
+				\includegraphics[width=1 \textwidth]{saiku_1}
+				\caption {\centering \small{Proyecto Saiku Analytics, c\'{o}digo fuente descontinuado}} \label{figure:chaperIII_4}
+				\small {Fuente: \'{A}rea de desarrollo de Tesla Technologies S.A.C, 2018}
+			\end{figure}
+			\item El nuevo m\'{o}dulo resultante rubik-report tiene compatibilidad al 100\% con el producto GiroSuite.
+			\item El nuevo m\'{o}dulo rubik-report si contiene el c\'{o}digo fuente correcto de las funcionalidades m'{i}nimas del proyecto Saiku Analytics.
+			
+			\begin{figure}[H]
+				\centering
+				\includegraphics[width=1 \textwidth]{saiku_2}
+				\caption {\centering \small{Proyecto Rubik-report, c\'{o}digo fuente}} \label{figure:chaperIII_5}
+				\small {Fuente: \'{A}rea de desarrollo de Tesla Technologies S.A.C, 2018}
+			\end{figure}
+			
+			\item El equipo recomienda reducir el n\'{u}mero de m\'{o}dulos pues 2 de ellos se encuentran ligados directamente como plugins de la Suite Pentaho Analytics.
+		\end{itemize}
 		
 		El equipo recomienda quitar todo aquello que no sea parte de la funcionalidad core y refactorizar el m\'{o}dulo rubik-query.
 		
