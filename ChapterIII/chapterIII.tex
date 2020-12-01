@@ -68,7 +68,38 @@
 		
 	\subsection{\textit{Sprint Review}}
 		Analizemos el sprint review de cada historia:
+		\subsubsection{Integración:Integrar los componentes saiku-ui, saiku-core y saiku-webapp, saiku-service, saiku-query, saiku-repository en el proceso de construcción del artefacto de GiroSuite.}
+		
+		El proyecto Saiku Analytics a nivel de fuentes correctas y compilables ya est\'{a}n descontinuadas, y se tienen sub m\'{o}dulos que no son \'{u}tiles al 100\%.
+		
+		\begin{figure}[H]
+			\centering
+			\includegraphics[width=1 \textwidth]{saiku_1}
+			\caption {\centering \small{Sprint BackLog}} \label{figure:chaperIII_4}
+			\small {Fuente: \'{A}rea de desarrollo de Tesla Technologies S.A.C, 2018}
+		\end{figure}
+		
+		El nuevo m\'{o}dulo resultante rubik-report tiene compatibilidad al 100\% con el producto GiroSuite.
+		
+		El nuevo m\'{o}dulo rubik-report si contiene las funcionalidades m'{i}nimas del proyecto Saiku Analytics.
+		
+		El equipo recomienda reducir el n\'{u}mero de m\'{o}dulos pues 2 de ellos se encuentran ligados directamente como plugins de la Suite Pentaho Analytics.
+		
+		El equipo recomienda quitar todo aquello que no sea parte de la funcionalidad core y refactorizar el m\'{o}dulo rubik-query.
+		
+		
 		\subsubsection{Compatibilidad: Verificar y corregir librerias de conflicto para las especificaciones del servidor Jbos EAP 6.4+ y loss archivos jboss-deployment-structure.xml, application.xml y build.properties.}
+		
+		
+		Se hizo el despliegue independiente del proyecto saiku
+		En la verificaci\'{o}n de los clientes se encontraron conflictos en las librerias 
+		
+		\subsubsection{Compatibilidad: Verificar y corregir las librerias de conflicto para las especificaciones del servidor WebLogic 12c + y los archivos weblogic.xml y build.properties}
+		\subsubsection{Compatilidad: Verificar y corregir librerias de conflicto para las especificaciones del servidor WebSphere 8.0+ y los archivos ibm-web-bnd.xml, ibm-web-ext.xml, deployment.xml y build.properties}
+		\subsubsection{Escalabilidad:  La session del usuario administrada por spring security cambiar para que pueda estar centralizada en la base de datos.}
+		\subsubsection{Escalabilidad: Modificar la configuración para la cache de mondrian para tener persistencia con Redis o una base de datos relacional.}
+		
+		\subsubsection{Integración: Retirar la authenticación propia de saiku, y hacer uso de la autenticación de GiroSuite}
 		
 	\subsection{\textit{Sprint Retrospective}}
 	
