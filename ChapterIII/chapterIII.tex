@@ -107,29 +107,26 @@
 						\small {Fuente: \'{A}rea de desarrollo de Tesla Technologies S.A.C, 2018}
 					\end{figure}
 				\end{itemize}
-		\end{enumerate}
-
-		
-		
-		
-				
-		\subsubsection{Compatibilidad: Verificar y corregir librerias de conflicto para las especificaciones del servidor Jbos EAP 6.4+ y loss archivos jboss-deployment-structure.xml, application.xml y build.properties.}
-		
-		\begin{itemize}
-			\item En la verificaci\'{o}n de los clientes se encontraron conflictos con las versiones Jboss EAP 6.4, 7.0 y sus versiones comunitarias Wildfly 10.0 Final, 10.1 y 11.0.
-			\item Los conflictos son por configuraciones internas de los cliente como jasper reports 3.0, implementaciones del standard JPA 1.0, spring framework 2.5 y librerias de JAX-WS 1.0.
-			\item El equipo recomienda mantenerse en la JRS-366(Jdk 8) y eso debe comunicarse al equipo de ventas para no modificar esta especificaci\'{o}n.
-			\item Actualmente GiroSuite ya integrado con Rubik Report puede desplegar en las versiones Jbos EAP 6.4, 7.0 y sus versiones comunitarias Wildfly 10.0 Final, 10.1 y 11.0, ver Figura \ref{figure:chaperIII_7}.
-			\begin{figure}[H]
-				\centering
-				\includegraphics[width=1 \textwidth]{saiku_5}
-				\caption {\centering \small{GiroSuite y Rubik-report desplegado en Wilfly 10.1}} \label{figure:chaperIII_7}
-				\small {Fuente: \'{A}rea de desarrollo de Tesla Technologies S.A.C, 2018}
-			\end{figure}
 			
-			\item El archivo application.xml fue modificado para contener los artefactos de rubik-report.
-			\item Se debe verificar la configuraci\'{o}n de Apache Jack Rabbit para el manejo de archivos y persistencia de los reportes pre-configurados.
-		\end{itemize}
+			\item \textbf{Verificar y corregir librerias de conflicto para las especificaciones del servidor Jbos EAP 6.4+ y loss archivos jboss-deployment-structure.xml, application.xml y build.properties}
+				\begin{itemize}
+					\item En la verificaci\'{o}n de los clientes se encontraron conflictos con las versiones Jboss EAP 6.4, 7.0 y sus versiones comunitarias Wildfly 10.0 Final, 10.1 y 11.0.
+					\item Los conflictos son por configuraciones internas de los cliente como jasper reports 3.0, implementaciones del standard JPA 1.0, spring framework 2.5 y librerias de JAX-WS 1.0.
+					\item El equipo recomienda mantenerse en la JRS-366(Jdk 8) y eso debe comunicarse al equipo de ventas para no modificar esta especificaci\'{o}n.
+					\item Actualmente GiroSuite ya integrado con Rubik Report puede desplegar en las versiones Jbos EAP 6.4, 7.0 y sus versiones comunitarias Wildfly 10.0 Final, 10.1 y 11.0, ver Figura \ref{figure:chaperIII_7}.
+					\begin{figure}[H]
+						\centering
+						\includegraphics[width=1 \textwidth]{saiku_5}
+						\caption {\centering \small{GiroSuite y Rubik-report desplegado en Wilfly 10.1}} \label{figure:chaperIII_7}
+						\small {Fuente: \'{A}rea de desarrollo de Tesla Technologies S.A.C, 2018}
+					\end{figure}
+					
+					\item El archivo application.xml fue modificado para contener los artefactos de rubik-report.
+					\item Se debe verificar la configuraci\'{o}n de Apache Jack Rabbit para el manejo de archivos y persistencia de los reportes pre-configurados.
+				\end{itemize}
+		\end{enumerate}
+		
+
 		\subsubsection{Verificar y corregir las librerias de conflicto para las especificaciones del servidor WebLogic 12c + y los archivos weblogic.xml y build.properties}
 			\begin{itemize}
 				\item En la verificaci\'{o}n de los clientes se encontraron conflictos con las versiones WebLogic 12.2.1.3 y superiores.
